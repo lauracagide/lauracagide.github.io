@@ -163,6 +163,166 @@
       backdrop-filter: blur(10px);
     }
 
+    .hero-copy {
+      border-radius: var(--radius-xl);
+      padding: 42px;
+      position: relative;
+      overflow: hidden;
+      border-top: 4px solid rgba(27, 127, 159, 0.65);
+    }
+
+    .hero-copy::before {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(27, 127, 159, 0.10), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 5vw, 4.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--accent);
+    }
+
+    .hero p {
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 1.06rem;
+      line-height: 1.75;
+      max-width: 62ch;
+    }
+
+    .hero-actions {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.16);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #1b7f9f, #0f9d8a);
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(34, 82, 102, 0.12);
+      color: var(--text);
+    }
+
+    .hero-card {
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      position: relative;
+      border-top: 4px solid rgba(15, 157, 138, 0.55);
+    }
+
+    .profile-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .profile-ring {
+      width: 250px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      padding: 8px;
+      background: linear-gradient(135deg, rgba(27, 127, 159, 0.95), rgba(15, 157, 138, 0.88));
+      box-shadow: 0 0 0 10px rgba(27, 127, 159, 0.08), 0 24px 40px rgba(0,0,0,0.16);
+    }
+
+    .profile-ring img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 18%;
+      border-radius: 50%;
+      display: block;
+      background: #d6eef7;
+      transform: scale(1.08);
+    }
+
+    .quick-info {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .info-row {
+      background: rgba(255,255,255,0.68);
+      border: 1px solid rgba(34, 82, 102, 0.08);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+
+    .info-row small {
+      display: block;
+      color: var(--accent-2);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.72rem;
+      margin-bottom: 4px;
+    }
+
+    .info-row span,
+    .info-row a {
+      color: var(--text);
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin: 10px 0 56px;
+    }
+
+    .stat-card {
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      text-align: left;
+      background: rgba(255,255,255,0.92);
+    }
+
     .stat-card strong {
       display: block;
       font-size: 2rem;
@@ -293,7 +453,10 @@
     }
 
     .company-logo.ieo-logo {
-      transform: scale(1.28);
+      width: 160%;
+      max-width: none;
+      height: auto;
+      transform: translateX(4%) scale(1.12);
     }
 
     .experience-meta {
@@ -467,7 +630,7 @@
         <span>University degrees completed in Biology and Marine Biology at the University of La Laguna.</span>
       </article>
       <article class="stat-card">
-        <strong>Skills</strong>
+        <strong>Key</strong>
         <span>Competencies in SPSS, Excel, Python, Canva, AI tools, and laboratory workflows.</span>
       </article>
       <article class="stat-card">
@@ -694,4 +857,5 @@
   </main>
 </body>
 </html>
+
 
