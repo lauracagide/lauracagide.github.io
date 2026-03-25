@@ -7,16 +7,16 @@
   <meta name="description" content="Academic and professional portfolio of Laura Cagide Carrillo, marine biologist focused on marine ecology, biodiversity, ocean systems, biological carbon pump, nitrogen compounds." />
   <style>
     :root {
-      --bg: #071b2b;
-      --bg-soft: #0d2d44;
-      --card: rgba(12, 43, 67, 0.72);
-      --card-strong: rgba(9, 35, 54, 0.88);
-      --line: rgba(146, 214, 255, 0.2);
-      --text: #eaf8ff;
-      --muted: #b7d8e8;
-      --accent: #62d0ff;
-      --accent-2: #79f0d3;
-      --shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+      --bg: #dff8ff;
+      --bg-soft: #bfefff;
+      --card: rgba(235, 250, 255, 0.72);
+      --card-strong: rgba(223, 245, 252, 0.9);
+      --line: rgba(56, 157, 191, 0.22);
+      --text: #10344a;
+      --muted: #42697a;
+      --accent: #12b7df;
+      --accent-2: #18c9b7;
+      --shadow: 0 20px 50px rgba(7, 57, 81, 0.12);
       --radius-xl: 28px;
       --radius-lg: 20px;
       --radius-md: 14px;
@@ -30,11 +30,11 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        linear-gradient(rgba(3, 17, 28, 0.78), rgba(4, 20, 31, 0.86)),
-        radial-gradient(circle at top left, rgba(98, 208, 255, 0.16), transparent 30%),
-        radial-gradient(circle at top right, rgba(121, 240, 211, 0.11), transparent 25%),
+        linear-gradient(rgba(224, 247, 252, 0.72), rgba(219, 244, 250, 0.82)),
+        radial-gradient(circle at top left, rgba(18, 183, 223, 0.18), transparent 30%),
+        radial-gradient(circle at top right, rgba(24, 201, 183, 0.14), transparent 25%),
         url("fondo-marino.jpg") center center/cover fixed no-repeat,
-        linear-gradient(180deg, #092336 0%, #071b2b 35%, #061521 100%);
+        linear-gradient(180deg, #eefcff 0%, #d9f6ff 42%, #c9eff9 100%);
       min-height: 100vh;
       overflow-x: hidden;
     }
@@ -56,13 +56,13 @@
     body::before {
       left: -180px;
       bottom: -160px;
-      background: #0ec5ff;
+      background: #5ad7f6;
     }
 
     body::after {
       right: -140px;
       top: 40px;
-      background: #39d9c7;
+      background: #72ead5;
     }
 
     .waves {
@@ -99,8 +99,8 @@
       top: 0;
       z-index: 10;
       backdrop-filter: blur(18px);
-      background: rgba(4, 20, 31, 0.55);
-      border-bottom: 1px solid rgba(146, 214, 255, 0.12);
+      background: rgba(233, 249, 253, 0.72);
+      border-bottom: 1px solid rgba(56, 157, 191, 0.16);
     }
 
     .nav-inner {
@@ -158,7 +158,7 @@
     .section-card,
     .timeline-item,
     .stat-card {
-      background: rgba(8, 33, 50, 0.78);
+      background: rgba(244, 252, 255, 0.76);
       border: 1px solid var(--line);
       box-shadow: var(--shadow);
       backdrop-filter: blur(16px);
@@ -178,7 +178,7 @@
       top: -80px;
       width: 220px;
       height: 220px;
-      background: radial-gradient(circle, rgba(98, 208, 255, 0.25), transparent 70%);
+      background: radial-gradient(circle, rgba(18, 183, 223, 0.18), transparent 70%);
       border-radius: 50%;
     }
 
@@ -237,13 +237,13 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #7caeff);
-      color: #062031;
+      background: linear-gradient(135deg, #12b7df, #59d6cc);
+      color: #ffffff;
     }
 
     .btn-secondary {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.45);
+      border: 1px solid rgba(56, 157, 191, 0.18);
       color: var(--text);
     }
 
@@ -272,6 +272,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center 24%;
       border-radius: 50%;
       display: block;
       background: #d6eef7;
@@ -284,8 +285,8 @@
     }
 
     .info-row {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.42);
+      border: 1px solid rgba(56, 157, 191, 0.1);
       border-radius: 14px;
       padding: 14px 16px;
     }
@@ -379,8 +380,8 @@
     .tag {
       border-radius: 999px;
       padding: 10px 14px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(56, 157, 191, 0.16);
+      background: rgba(255,255,255,0.48);
       color: var(--text);
       font-size: 0.92rem;
     }
@@ -405,6 +406,38 @@
       width: 5px;
       height: 100%;
       background: linear-gradient(180deg, var(--accent), var(--accent-2));
+    }
+
+    .experience-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .company-logo-wrap {
+      width: 72px;
+      height: 72px;
+      flex: 0 0 72px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(56, 157, 191, 0.14);
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    .company-logo {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .experience-meta {
+      flex: 1 1 320px;
     }
 
     .timeline-top {
@@ -624,11 +657,18 @@
       </div>
       <div class="timeline">
         <article class="timeline-item">
-          <div class="timeline-top">
-            <h3>Laboratory Assistant</h3>
-            <span class="date">2026</span>
+          <div class="experience-header">
+            <div class="company-logo-wrap">
+              <img class="company-logo" src="AChemlogo.png" alt="ACHEM logo" />
+            </div>
+            <div class="experience-meta">
+              <div class="timeline-top">
+                <h3>Laboratory Assistant</h3>
+                <span class="date">2026</span>
+              </div>
+              <div class="place">ACHEM (Applied Analytical Chemistry Research Group)</div>
+            </div>
           </div>
-          <div class="place">ACHEM (Applied Analytical Chemistry Research Group)</div>
           <ul>
             <li>Supported the digitalisation and visibility of laboratory activities and research-related outputs.</li>
             <li>Designed technical materials and contributed to scientific outreach and knowledge-transfer tasks.</li>
@@ -637,11 +677,18 @@
           </ul>
         </article>
         <article class="timeline-item">
-          <div class="timeline-top">
-            <h3>Research Intern in Marine Aquaculture</h3>
-            <span class="date">2025</span>
+          <div class="experience-header">
+            <div class="company-logo-wrap">
+              <img class="company-logo" src="logo-csic-ieo.jpg" alt="IEO-CSIC logo" />
+            </div>
+            <div class="experience-meta">
+              <div class="timeline-top">
+                <h3>Research Intern in Marine Aquaculture</h3>
+                <span class="date">2025</span>
+              </div>
+              <div class="place">Canary Islands Oceanographic Center (IEO-CSIC) · Marine Cultures Area</div>
+            </div>
           </div>
-          <div class="place">Canary Islands Oceanographic Center (IEO-CSIC) · Marine Cultures Area</div>
           <ul>
             <li>Integrated multitrophic aquaculture systems.</li>
             <li>Lipid and plasma analysis.</li>
@@ -654,11 +701,18 @@
         </article>
 
         <article class="timeline-item">
-          <div class="timeline-top">
-            <h3>Aquatic Animal Care Technician</h3>
-            <span class="date">2025</span>
+          <div class="experience-header">
+            <div class="company-logo-wrap">
+              <img class="company-logo" src="ctnaval.png" alt="CTN logo" />
+            </div>
+            <div class="experience-meta">
+              <div class="timeline-top">
+                <h3>Aquatic Animal Care Technician</h3>
+                <span class="date">2025</span>
+              </div>
+              <div class="place">CTN (Naval and Marine Technology Center), Canary Islands Oceanographic Center (IEO-CSIC)</div>
+            </div>
           </div>
-          <div class="place">CTN (Naval and Marine Technology Center), Canary Islands Oceanographic Center (IEO-CSIC)</div>
           <ul>
             <li>Supervision and care of marine cultures.</li>
             <li>Maintenance and repair of aquaculture facilities and equipment.</li>
@@ -668,11 +722,18 @@
         </article>
 
         <article class="timeline-item">
-          <div class="timeline-top">
-            <h3>Research Intern in Marine Natural Products</h3>
-            <span class="date">2023</span>
+          <div class="experience-header">
+            <div class="company-logo-wrap">
+              <img class="company-logo" src="logoiubo.jpg" alt="IUBO logo" />
+            </div>
+            <div class="experience-meta">
+              <div class="timeline-top">
+                <h3>Research Intern in Marine Natural Products</h3>
+                <span class="date">2023</span>
+              </div>
+              <div class="place">IUBO, Antonio González University Institute of Organic Biochemistry · PRODMAR Group</div>
+            </div>
           </div>
-          <div class="place">IUBO, Antonio González University Institute of Organic Biochemistry · PRODMAR Group</div>
           <ul>
             <li>Secondary metabolite research.</li>
             <li>Toxin research.</li>
@@ -773,3 +834,4 @@
   </main>
 </body>
 </html>
+
